@@ -36,4 +36,9 @@ public class RegisterStepLibrary {
     public String getNotificationMessageText() {
         return customActions.getText(registerScreen.NOTIFICATION_MESSAGE).trim();
     }
+
+    @Step("Is Notification Message text visible")
+    public boolean isNotificationTextVisible() {
+        return customActions.isVisible(registerScreen.NOTIFICATION_MESSAGE);
+    }
 }

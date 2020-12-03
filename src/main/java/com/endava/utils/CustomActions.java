@@ -14,7 +14,11 @@ public class CustomActions extends PageObject {
     }
 
     public boolean isDisplayed (WebElement webElement) {
-        return $(webElement).isDisplayed();
+        return $(webElement).waitUntilVisible().isDisplayed();
+    }
+
+    public boolean isVisible (WebElement webElement) {
+        return $(webElement).isVisible();
     }
 
     public String getText (WebElement webElement) {

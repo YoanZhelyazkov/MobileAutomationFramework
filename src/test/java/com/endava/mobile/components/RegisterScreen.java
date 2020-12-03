@@ -12,11 +12,11 @@ public class RegisterScreen extends PageObject {
     public WebElement REGISTER_EMAIL_FIELD;
 
     @AndroidFindBy(id = "registerPassword")
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSecureTextField[@elementId='13010000-0000-0000-0406-000000000000']")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSecureTextField")
     public WebElement REGISTER_PASSWORD_FIELD;
 
     @AndroidFindBy(id = "registerConfirmPassword")
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSecureTextField[@elementId='15010000-0000-0000-0406-000000000000']")
+    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeSecureTextField)[2]")
     public WebElement REGISTER_CONFIRM_PASSWORD_FIELD;
 
     @AndroidFindBy(id = "registerButton")

@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 
 public class WelcomeScreen extends PageObject {
 
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Allow']")
+    public WebElement ALLOW_NOTIFICATIONS_BUTTON;
+
     @AndroidFindBy(id = "loginEmployeeButton")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Login as SFD Employee']")
     public WebElement LOG_IN_AS_EMPLOYEE_BUTTON;

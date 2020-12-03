@@ -8,6 +8,6 @@ import org.openqa.selenium.WebElement;
 public class BenefitsScreen extends PageObject {
 
     @AndroidFindBy(id = "categoryHeaderImage")
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@elementId='7C010000-0000-0000-0406-000000000000']")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='TAKE A TOUR']")
     public WebElement BENEFITS_CATEGORIES_HEADER;
 }

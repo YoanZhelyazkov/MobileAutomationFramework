@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 public class LogInScreen extends PageObject {
 
     @AndroidFindBy(id = "textinput_placeholder")
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@elementId='2D010000-0000-0000-0406-000000000000']")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@value='e.g. firstname.lastname@endava.com']")
     public WebElement EMAIL_FIELD;
 
     @AndroidFindBy(id = "password")
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSecureTextField[@elementId='2F010000-0000-0000-0406-000000000000']")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSecureTextField")
     public WebElement PASSWORD_FIELD;
 
     @AndroidFindBy(id = "loginButton")

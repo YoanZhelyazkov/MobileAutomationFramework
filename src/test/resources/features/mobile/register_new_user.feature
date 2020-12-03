@@ -24,8 +24,6 @@ Feature: Register functionality
 
 
 
-
-
 #  class FullAppTest {
 #  val DUMMY_EMAIL = "dummy@email.com"
 #  val DUMMY_PASSWORD = "blabla"

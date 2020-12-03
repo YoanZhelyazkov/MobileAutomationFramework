@@ -36,6 +36,9 @@ public class RegisterNewUserStepDefinitions {
 
     @Then("I should see Notification message {string}")
     public void iShouldSeeMessage(String message) {
-        assertEquals(registerStepLibrary.getNotificationMessageText(), message);
+        // Needed as in iOS version, there is no notification
+        if (registerStepLibrary.isNotificationTextVisible()) {
+            assertEquals(registerStepLibrary.getNotificationMessageText(), message);
+        }
     }
 }
