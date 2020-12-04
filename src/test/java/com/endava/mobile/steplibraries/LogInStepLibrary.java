@@ -34,13 +34,18 @@ public class LogInStepLibrary {
         customActions.tapOn(logInScreen.CREATE_NEW_USER_BUTTON);
     }
 
-    @Step("Click on Sign In button")
-    public void clickOnSignInButton() {
+    @Step("Tap on Sign In button")
+    public void tapOnSignInButton() {
         customActions.tapOn(logInScreen.SIGN_IN_BUTTON);
     }
 
     @Step("I should be correctly logged in")
     public boolean shouldBeCorrectlyLoggedIn() {
         return customActions.isDisplayed(benefitsScreen.BENEFITS_CATEGORIES_HEADER);
+    }
+
+    @Step("Is Text input Error message with correct text")
+    public boolean isTextInputErrorMessageCorrect(String errorText) {
+        return customActions.getText(logInScreen.TEXT_INPUT_ERROR).equals(errorText);
     }
 }
