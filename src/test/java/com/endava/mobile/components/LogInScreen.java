@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class LogInScreen extends PageObject {
 
-    @AndroidFindBy(id = "textinput_placeholder")
+    @AndroidFindBy(id = "username")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@value='e.g. firstname.lastname@endava.com']")
     public WebElement EMAIL_FIELD;
 
@@ -22,4 +22,8 @@ public class LogInScreen extends PageObject {
     @AndroidFindBy(id = "registerButton")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Create one!']")
     public WebElement CREATE_NEW_USER_BUTTON;
+
+    @AndroidFindBy(id = "textinput_error")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Create one!']")
+    public WebElement TEXT_INPUT_ERROR;
 }

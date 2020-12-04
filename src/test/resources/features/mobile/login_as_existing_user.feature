@@ -7,16 +7,27 @@ Feature: Login functionality
   @positive
   Scenario: I login with correct information
     Given I tap on Login as Employee button
+    And I tap on Log In button
     When I enter "admin@endava.com" as login email
     And I enter "admin" as login password
-    And I click on Sign In button
+    And I tap on Sign In button
     Then I should see that I am correctly logged in
 
+  @negative
+  Scenario: I try to log with different than Endava mail
+    Given I tap on Login as Employee button
+    And I tap on Log In button
+    When I enter "mail@notEndava.com" as login email
+    And I tap on Sign In button
+    Then I should see Text input Error message "Please type your Endava e-mail"
 
-
-
-
-
+  @negative
+  Scenario: I try to log with empty password field
+    Given I tap on Login as Employee button
+    And I tap on Log In button
+    When I enter "admin@endava.com" as login email
+    And I tap on Sign In button
+    Then I should see Text input Error message "Mandatory field"
 
 
 

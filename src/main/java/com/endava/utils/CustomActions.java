@@ -22,6 +22,19 @@ public class CustomActions extends PageObject {
     }
 
     public String getText (WebElement webElement) {
-        return $(webElement).getText();
+        return $(webElement).getText().trim();
+    }
+
+    public String getDriverType() {
+
+        String platformName = "";
+
+        if (getDriver().toString().contains("AndroidDriver")) {
+            platformName = "Android";
+        } else {
+            platformName = "iOS";
+        }
+
+        return platformName;
     }
 }

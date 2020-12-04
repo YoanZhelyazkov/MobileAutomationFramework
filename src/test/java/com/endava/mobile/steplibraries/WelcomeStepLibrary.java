@@ -4,7 +4,6 @@ import com.endava.mobile.components.WelcomeScreen;
 import com.endava.utils.CustomActions;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
-import org.junit.Before;
 
 public class WelcomeStepLibrary {
 
@@ -14,15 +13,15 @@ public class WelcomeStepLibrary {
     @Steps(shared = true)
     CustomActions customActions;
 
-    @Before
     public void allowNotifications() {
-        if (welcomeScreen.ALLOW_NOTIFICATIONS_BUTTON.isDisplayed()) {
+        if (customActions.getDriverType().equals("iOS")) {
             customActions.tapOn(welcomeScreen.ALLOW_NOTIFICATIONS_BUTTON);
         }
     }
 
     @Step("Tap on Login as SFD Employee")
     public void tapLoginAsEmployeeButton() {
+        allowNotifications();
         customActions.tapOn(welcomeScreen.LOG_IN_AS_EMPLOYEE_BUTTON);
     }
 
