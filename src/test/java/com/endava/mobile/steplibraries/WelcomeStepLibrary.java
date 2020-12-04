@@ -14,7 +14,7 @@ public class WelcomeStepLibrary {
     CustomActions customActions;
 
     public void allowNotifications() {
-        if (customActions.isDisplayed(welcomeScreen.ALLOW_NOTIFICATIONS_BUTTON)) {
+        if (customActions.isVisible(welcomeScreen.ALLOW_NOTIFICATIONS_BUTTON)) {
             customActions.tapOn(welcomeScreen.ALLOW_NOTIFICATIONS_BUTTON);
         }
     }

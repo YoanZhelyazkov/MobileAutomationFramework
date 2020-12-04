@@ -18,6 +18,7 @@ Feature: Login functionality
     Given I tap on Login as Employee button
     And I tap on Log In button
     When I enter "mail@notEndava.com" as login email
+    And I enter "admin" as login password
     And I tap on Sign In button
     Then I should see Wrong Email Error message displayed
 

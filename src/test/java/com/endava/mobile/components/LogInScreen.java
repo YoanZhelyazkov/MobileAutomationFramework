@@ -24,6 +24,6 @@ public class LogInScreen extends PageObject {
     public WebElement CREATE_NEW_USER_BUTTON;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Please type your Endava e-mail']")
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Please type your Endava e-mail']")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Please type your Endava e-mail']")
     public WebElement WRONG_EMAIL_INPUT_ERROR;
 }
