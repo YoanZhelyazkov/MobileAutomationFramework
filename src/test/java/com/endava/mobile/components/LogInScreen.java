@@ -23,7 +23,11 @@ public class LogInScreen extends PageObject {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Create one!']")
     public WebElement CREATE_NEW_USER_BUTTON;
 
-    @AndroidFindBy(id = "textinput_error")
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Create one!']")
-    public WebElement TEXT_INPUT_ERROR;
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Please type your Endava e-mail']")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Please type your Endava e-mail']")
+    public WebElement WRONG_EMAIL_INPUT_ERROR;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Mandatory field']")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Mandatory field']")
+    public WebElement MANDATORY_FIELD_INPUT_ERROR;
 }

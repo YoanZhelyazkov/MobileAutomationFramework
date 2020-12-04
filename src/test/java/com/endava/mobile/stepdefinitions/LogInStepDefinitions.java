@@ -48,8 +48,13 @@ public class LogInStepDefinitions {
         assertTrue(logInStepLibrary.shouldBeCorrectlyLoggedIn());
     }
 
-    @Then("I should see Text input Error message {string}")
-    public void iShouldSeeTextInputErrorMessage(String errorText) {
-        assertTrue(logInStepLibrary.isTextInputErrorMessageCorrect(errorText));
+    @Then("I should see Wrong Email Error message displayed")
+    public void iShouldSeeTextInputErrorMessage() {
+        assertTrue(logInStepLibrary.isTextInputWrongEmailMessageDisplayed());
+    }
+
+    @Then("I should see Mandatory field Error message displayed")
+    public void iShouldSeeMandatoryFieldErrorMessage() {
+        assertTrue(logInStepLibrary.isTextInputMandatoryMessageDisplayed());
     }
 }

@@ -19,7 +19,7 @@ Feature: Login functionality
     And I tap on Log In button
     When I enter "mail@notEndava.com" as login email
     And I tap on Sign In button
-    Then I should see Text input Error message "Please type your Endava e-mail"
+    Then I should see Wrong Email Error message displayed
 
   @negative
   Scenario: I try to log with empty password field
@@ -27,7 +27,7 @@ Feature: Login functionality
     And I tap on Log In button
     When I enter "admin@endava.com" as login email
     And I tap on Sign In button
-    Then I should see Text input Error message "Mandatory field"
+    Then I should see Wrong Email Error message displayed
 
 
 

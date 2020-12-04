@@ -44,8 +44,13 @@ public class LogInStepLibrary {
         return customActions.isDisplayed(benefitsScreen.BENEFITS_CATEGORIES_HEADER);
     }
 
-    @Step("Is Text input Error message with correct text")
-    public boolean isTextInputErrorMessageCorrect(String errorText) {
-        return customActions.getText(logInScreen.TEXT_INPUT_ERROR).equals(errorText);
+    @Step("Is Text input Wrong Email Error message displayed")
+    public boolean isTextInputWrongEmailMessageDisplayed() {
+        return customActions.isDisplayed(logInScreen.WRONG_EMAIL_INPUT_ERROR);
+    }
+
+    @Step("Is Text input Mandatory field Error message displayed")
+    public boolean isTextInputMandatoryMessageDisplayed() {
+        return customActions.isDisplayed(logInScreen.MANDATORY_FIELD_INPUT_ERROR);
     }
 }
