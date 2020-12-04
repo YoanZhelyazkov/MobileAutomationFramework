@@ -48,9 +48,4 @@ public class LogInStepLibrary {
     public boolean isTextInputWrongEmailMessageDisplayed() {
         return customActions.isDisplayed(logInScreen.WRONG_EMAIL_INPUT_ERROR);
     }
-
-    @Step("Is Text input Mandatory field Error message displayed")
-    public boolean isTextInputMandatoryMessageDisplayed() {
-        return customActions.isDisplayed(logInScreen.MANDATORY_FIELD_INPUT_ERROR);
-    }
 }

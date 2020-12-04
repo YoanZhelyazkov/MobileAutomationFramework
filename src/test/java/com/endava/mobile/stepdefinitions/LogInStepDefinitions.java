@@ -52,9 +52,4 @@ public class LogInStepDefinitions {
     public void iShouldSeeTextInputErrorMessage() {
         assertTrue(logInStepLibrary.isTextInputWrongEmailMessageDisplayed());
     }
-
-    @Then("I should see Mandatory field Error message displayed")
-    public void iShouldSeeMandatoryFieldErrorMessage() {
-        assertTrue(logInStepLibrary.isTextInputMandatoryMessageDisplayed());
-    }
 }

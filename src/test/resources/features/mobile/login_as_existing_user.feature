@@ -21,67 +21,11 @@ Feature: Login functionality
     And I tap on Sign In button
     Then I should see Wrong Email Error message displayed
 
-  @negative
-  Scenario: I try to log with empty password field
-    Given I tap on Login as Employee button
-    And I tap on Log In button
-    When I enter "admin@endava.com" as login email
-    And I tap on Sign In button
-    Then I should see Wrong Email Error message displayed
 
-
-
-#  class FullAppTest {
-#  val DUMMY_EMAIL = "dummy@email.com"
-#  val DUMMY_PASSWORD = "blabla"
-#  val DUMMY_PASSWORD2 = "blablasux"
 #  val VALID_EMAIL = "admin@endava.com"
 #  val VALID_PASSWORD = "admin"
 #  val SHORT_PASSWORD = "1234"
 #  val LONG_PASSWORD = "12345678901234567890123456789012345678901234567890z" // 51
-#  val REGISTER_EMAIL = "yanko0001@endava.com" // make sure this user does not exist
-#  val REGISTER_PASSWORD = "KeepYourselfPositive"
-#
-#
-#  /**
-#    * test sign up (all error cases + success afterwards)
-#  */
-#  // wait sign up screen to show up
-#
-#  // 1. case empty fields
-#  // click the register button
-#  // wait for error
-#
-#  // 2. case non-endava email
-#  // fill in the fields
-#  // click the login button
-#  // wait for error
-#
-#  // 3. case password less than or equal to 4 characters
-#  // fill in the fields
-#  // click the login button
-#  // wait for error
-#
-#  // 4. case password longer than 50 characters
-#  // fill in the fields
-#  // click the login button
-#  // wait for error
-#
-#  // 5. case passwords do not match
-#  // fill in the fields
-#  // click the login button
-#  // wait for error
-#
-#  // 6. case existing loser
-#  // fill in the fields
-#  // click the login button
-#  // wait for home screen (category screen)
-#
-#  // 7. case successful register
-#  // fill in the fields
-#  // click the login button
-#  // wait for home screen (category screen)
-#
 #
 #  /**
 #    * test sign in (all error cases + success afterwards)
