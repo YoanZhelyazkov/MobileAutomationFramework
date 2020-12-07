@@ -6,8 +6,6 @@ import com.endava.utils.CustomActions;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 
-import static org.junit.Assert.assertTrue;
-
 public class LogInStepLibrary {
 
     @Steps(shared = true)

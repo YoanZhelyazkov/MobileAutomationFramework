@@ -1,9 +1,9 @@
 package com.endava.utils;
 
-import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.steps.UIInteractionSteps;
 import org.openqa.selenium.WebElement;
 
-public class CustomActions extends PageObject {
+public class CustomActions extends UIInteractionSteps {
 
     public void tapOn(WebElement webElement) {
         $(webElement).waitUntilClickable().click();
@@ -27,7 +27,7 @@ public class CustomActions extends PageObject {
 
     public String getDriverType() {
 
-        String platformName = "";
+        String platformName;
 
         if (getDriver().toString().contains("AndroidDriver")) {
             platformName = "Android";
